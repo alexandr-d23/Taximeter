@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KislyakovEdition</string>
+    <string name="clear_dialog_message">Данил подумОй, вся история пропадёт</string>
+    <string name="clear_dialog_positive">Очистить</string>
+    <string name="clear_dialog_negative">Нет</string>
+    <string name="clear_dialog_title">Очистить историю?</string>
+</resources>
