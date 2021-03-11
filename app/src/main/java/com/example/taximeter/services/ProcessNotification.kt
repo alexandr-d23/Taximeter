@@ -27,8 +27,8 @@ class ProcessNotification(
         intent = Intent(context, MainActivity::class.java)
         pendingIntent = PendingIntent.getActivity(context,0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
         notification = NotificationCompat.Builder(context, CHANNEL_ID).run {
-            setContentTitle("Данил рубит бабосы")
-            setContentText("Мигои бери трубку пёс, когда набирает босс")
+            setContentTitle("Таймер запущен")
+            setContentText("Деньги считаются")
             setSmallIcon(R.drawable.ic_launcher_foreground)
             setContentIntent(pendingIntent)
             build()
