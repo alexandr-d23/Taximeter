@@ -15,11 +15,9 @@ interface JobDAO {
     @Update
     suspend fun updateJob(job: Job)
 
-    @Transaction
     @Query("SELECT * FROM Job ORDER BY dateOfJob DESC")
     suspend fun getJobs(): List<Job>
 
-    @Transaction
     @Query("SELECT * FROM Job WHERE id = :id")
     suspend fun getJobById(id: Int): List<Job>
 
